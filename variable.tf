@@ -7,3 +7,16 @@ variable "secret-mounts" {
     }
   }
 }
+
+
+variable "secrets" {
+  default = {
+    cart = {
+      sercet_mount = "roboshop-dev"
+      kv = {
+        zip       = "zap",
+        foo       = "bar"
+      }
+    }
+  }
+}
