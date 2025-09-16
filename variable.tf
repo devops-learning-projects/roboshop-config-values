@@ -49,5 +49,20 @@ variable "secrets" {
         MONGO_URL       = "mongodb://mongodb-dev.maidevops.fun:27017/users"
       }
     }
+
+    mysql = {
+      sercet_mount = "roboshop-dev"
+      kv = {
+        ROOT_PASSWORD           = "RoboShop@1"
+      }
+    }
+
+    rabbitmq = {
+      sercet_mount = "roboshop-dev"
+      kv = {
+        APP_USER           = "roboshop",
+        APP_PASSWORD       = "roboshop123"
+      }
+    }
   }
 }
