@@ -5,6 +5,9 @@ variable "secret-mounts" {
     roboshop-dev = {
       description = "RoboShop Project Dev Secrets"
     }
+    roboshop-infra = {
+      description = "RoboShop Project infra Secrets"
+    }
   }
 }
 
@@ -85,6 +88,14 @@ variable "secrets" {
         AMQP_HOST       = "rabbitmq-dev.maidevops.fun",
         AMQP_USER       = "roboshop",
         AMQP_PASS       = "roboshop123"
+      }
+    }
+
+    ssh = {
+      sercet_mount = "roboshop-infra"
+      kv = {
+        USER_NAME       = "ec2-user",
+        PASSWORD        = "DevOps321"
       }
     }
   }
