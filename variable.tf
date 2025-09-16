@@ -53,7 +53,7 @@ variable "secrets" {
     mysql = {
       sercet_mount = "roboshop-dev"
       kv = {
-        ROOT_PASSWORD           = "RoboShop@1"
+        ROOT_PASSWORD     = "RoboShop@1"
       }
     }
 
@@ -62,6 +62,29 @@ variable "secrets" {
       kv = {
         APP_USER           = "roboshop",
         APP_PASSWORD       = "roboshop123"
+      }
+    }
+
+    shipping = {
+      sercet_mount = "roboshop-dev"
+      kv = {
+        CART_ENDPOINT       = "cart-dev.maidevops.fun:8080",
+        DB_HOST             = "mysql-dev.maidevops.fun"
+        DB_USER             = "root"
+        DB_PASS             = "RoboShop@1"
+      }
+    }
+
+    payment = {
+      sercet_mount = "roboshop-dev"
+      kv = {
+        CART_HOST       = "cart-dev.maidevops.fun",
+        CART_PORT       = 8080,
+        USER_HOST       = "user-dev.maidevops.fun",
+        USER_PORT       = 8080,
+        AMQP_HOST       = "rabbitmq-dev.maidevops.fun",
+        AMQP_USER       = "roboshop",
+        AMQP_PASS       = "roboshop123"
       }
     }
   }
