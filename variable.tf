@@ -94,8 +94,8 @@ variable "secrets" {
     ssh = {
       sercet_mount = "roboshop-infra"
       kv = {
-        USER_NAME       = "ec2-user",
-        PASSWORD        = "DevOps321"
+        username       = "ec2-user",
+        password        = "DevOps321"
       }
     }
   }
