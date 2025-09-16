@@ -32,5 +32,13 @@ variable "secrets" {
 
       }
     }
+
+    catalogue = {
+      sercet_mount = "roboshop-dev"
+      kv = {
+        MONGO           = "true",
+        MONGO_URL       = "mongodb://mongodb-dev.maidevops.fun:27017/catalogue",
+      }
+    }
   }
 }
