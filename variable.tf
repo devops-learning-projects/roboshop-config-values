@@ -72,8 +72,8 @@ variable "secrets" {
       sercet_mount = "roboshop-dev"
       kv = {
         CART_ENDPOINT       = "cart-dev.maidevops.fun:8080",
-        DB_HOST             = "mysql-dev.maidevops.fun"
-        DB_USER             = "root"
+        DB_HOST             = "mysql-dev.maidevops.fun",
+        DB_USER             = "root",
         DB_PASS             = "RoboShop@1"
       }
     }
