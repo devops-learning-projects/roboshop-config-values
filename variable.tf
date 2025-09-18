@@ -19,7 +19,7 @@ variable "secrets" {
       kv = {
         REDIS_HOST           = "redis-dev.maidevops.fun"
         CATALOGUE_HOST       = "catalogue-dev.maidevops.fun"
-        CATALOGUE_PORT       = 8080
+        CATALOGUE_PORT       = "8080"
       }
     }
 
