@@ -69,5 +69,13 @@ variable "secrets" {
       }
     }
 
+    rabbitmq = {
+      sercet_mount = "roboshop-dev"
+      kv = {
+        APP_USER           = "roboshop"
+        APP_PASSWORD       = "roboshop123"
+      }
+    }
+
   }
 }
