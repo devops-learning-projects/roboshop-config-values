@@ -62,5 +62,12 @@ variable "secrets" {
       }
     }
 
+    mysql = {
+      sercet_mount = "roboshop-dev"
+      kv = {
+        ROOT_PASSWORD     = "RoboShop@1"
+      }
+    }
+
   }
 }
