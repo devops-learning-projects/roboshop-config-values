@@ -40,5 +40,18 @@ variable "secrets" {
       }
     }
 
+    catalogue = {
+      sercet_mount = "roboshop-dev"
+      kv = {
+        MONGO           = "true"
+        MONGO_URL       = "mongodb://mongodb-dev.maidevops.fun:27017/catalogue"
+
+        DB_TYPE         = "mongo"
+        APP_GIT_URL     = "https://github.com/roboshop-devops-project-v3/catalogue"
+        DB_HOST         = "mongodb-dev.maidevops.fun"
+        SCHEMA_FILE     = "db/master-data.js"
+      }
+    }
+
   }
 }
