@@ -89,5 +89,19 @@ variable "secrets" {
       }
     }
 
+    payment = {
+      sercet_mount = "roboshop-dev"
+      kv = {
+        CART_HOST       = "cart-dev.maidevops.fun"
+        CART_PORT       = "8080"
+        USER_HOST       = "user-dev.maidevops.fun"
+        USER_PORT       = "8080"
+        AMQP_HOST       = "rabbitmq-dev.maidevops.fun"
+        AMQP_USER       = "roboshop"
+        AMQP_PASS       = "roboshop123"
+      }
+    }
+
+
   }
 }
