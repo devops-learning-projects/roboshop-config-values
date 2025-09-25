@@ -1,9 +1,9 @@
 resource "vault_mount" "component" {
-  path        = "cart-dev"
+  path        = "roboshop-dev"
   type        = "kv-v2"
   options = {
     version = "2"
     type    = "kv-v2"
   }
-  description = "cart-dev"
+  description = "roboshop-dev"
 }
