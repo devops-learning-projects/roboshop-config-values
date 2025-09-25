@@ -5,6 +5,9 @@ variable "secret-mounts" {
     roboshop-dev = {
       description = "RoboShop Project Dev Secrets"
     }
+    roboshop-infra = {
+      description = "RoboShop Project infra Secrets"
+    }
   }
 }
 
@@ -102,6 +105,13 @@ variable "secrets" {
       }
     }
 
+    ssh = {
+      sercet_mount = "roboshop-infra"
+      kv = {
+        username       = "ec2-user"
+        password        = "DevOps321"
+      }
+    }
 
   }
 }
