@@ -53,5 +53,14 @@ variable "secrets" {
       }
     }
 
+    user = {
+      sercet_mount = "roboshop-dev"
+      kv = {
+        MONGO           = "true"
+        REDIS_URL       = "redis://redis-dev.maidevops.fun:6379"
+        MONGO_URL       = "mongodb://mongodb-dev.maidevops.fun:27017/users"
+      }
+    }
+
   }
 }
